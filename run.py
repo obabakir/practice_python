@@ -1,8 +1,8 @@
 message = "Hello Word"
 print(message)
 
-a = 100
+a = 140
 print(a)
 
-b = 15
+b = 156
 print(b)
