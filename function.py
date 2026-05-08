@@ -13,6 +13,8 @@ print("=== Define (Parameter) vs Call (Argument) ===")
 
 # === Define (parameter) ===
 
+# Note: python alse has "void = None" and "return = value"
+
 
 def great(a):
     print(f"how are you, {a}")
@@ -25,11 +27,33 @@ def greating(b):
 
 # === Call (Argument) ===
 result1 = great("Abubakir")
-print(result1)
+print("result1:", result1)
 # how are you, Abubakir
-# void === none
+# void ===result1: none
 
 result2 = greating("Brian")
-print(result2)
+print("result2", result2)
 # greating is exacuted
-# return === hello Brian
+# return === result2: hello Brian
+
+
+print("=== Keyword (Parameter ga) vs Default (Argument ga) ===")
+
+# === Define (default value can be inserted) ===
+
+
+def give_great(name, age=20):
+    print(" give_great is exacuted")
+    return f"Hi {name}, you are {age} years old"
+
+
+# === Call (keywords can be inserted this is tyo make the function more specific) ===
+
+result3 = give_great(name="Martin", age=30)
+print("result3:", result3)
+#  result3: Hi Martin, you are 30 years old
+
+
+result4 = give_great(name="Jhon")
+print("result4:", result4)
+# result4: Hi Jhon, you are 20 years old
