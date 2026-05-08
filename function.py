@@ -57,3 +57,23 @@ print("result3:", result3)
 result4 = give_great(name="Jhon")
 print("result4:", result4)
 # result4: Hi Jhon, you are 20 years old
+
+
+print("=== Scope ===")
+# Scope === priority
+
+
+# Define
+b = 10
+# 3
+
+
+def calculating(a, b):
+    # 2
+    c = a * b
+    # 1
+    print(f"the value of is is {c}")
+
+
+#   Call
+calculating(15, 6)
