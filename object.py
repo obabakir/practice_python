@@ -97,10 +97,12 @@ final closing logic
 '''
 # agar javob topilganda else method ishlardi
 
+
+# case 4 Objectga qitmirlik qilib state borligini bilmoqchi bolsak:
 try:
     print("passed here")
     a = car_dict.speed
-    print("result:", result)
+    print("result:", a)
 
 except KeyError as err:
     print("no color state is found:", err)
@@ -116,6 +118,56 @@ finally:
 '''
 passed here
 no speed is found: 'dict' object has no attribute 'speed'
+final closing logic
+'''
+# case 5. Ikki katoni bir line da tekshirish va qaysini bolsa shuni namoyon qilish
+
+try:
+    print("passed here")
+    # a = car_dict.speed
+    # print("result:", a)
+
+    result = car_dict["color"]
+    print("result:", result)
+
+except (KeyError, AttributeError)as err:
+    print("either option check error:", err)
+
+
+else:
+    print("exacuted succesfully")
+
+finally:
+    print("final closing logic")
+
+'''
+passed here
+either option check error: 'color'
+final closing logic
+
+'''
+# case 6. umumiy general hatolarni 1 amalda hendle qilish
+
+try:
+    print("passed here")
+    # a = car_dict.speed
+    # print("result:", a)
+
+    result = car_dict["color"]
+    print("result:", result)
+
+except (Exception)as err:
+    print("General err checking", err)
+
+
+else:
+    print("exacuted succesfully")
+
+finally:
+    print("final closing logic")
+'''
+passed here
+General err checking 'color'
 final closing logic
 
 '''
