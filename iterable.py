@@ -51,7 +51,7 @@ print(nameTaking)
 name = person_obj.get("name")
 hobby = person_obj.get("hobby")
 balance = person_obj.get("balance", 0)
-# hobby ni qidirayapmiz, agar * nameTaking = person_obj["name"] * usulda qidirsak yoq valuni bizga terminal err beradi
+# hobby ni qidirayapmiz, agar * nameTaking = person_obj["name"] * usulda qidirsak yoq valuni bizga terminal err beradi hendle qilishni organdik, object.py da qildik
 # bu yerda agar balance bolmasa 0 qiyhmatni qaytarishi == ? ni organganmiz
 print(f"the name is {name}, hobby: {hobby} and balance: {balance}")
 '''

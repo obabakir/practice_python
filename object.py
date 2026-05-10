@@ -41,3 +41,81 @@ print("result2:", result2)
 result1: 98  ==>> yaxlitlash un ishlatiladi || import qilingan package ichidan 1 ta method ni tanlab oldik ||
 result2: 99 ==>  yaxlitlash un ishlatiladi || import qilingan yolgiz method dan foydalandik ||
 '''
+print("=== Error hendling system ===")
+car_dict = dict(name="Tayota", year=2026, electric=True)
+
+# case 1 try bu data ni tekshiradi yoq bsa exceptga otadi jarayon shunga faqat print ishladi
+try:
+    print("passed here")
+    result = car_dict["orign"]
+    print("result:", result)
+
+except KeyError as err:
+    print("no origin state is found:", err)
+
+'''
+passed here
+no origin state is found: 'orign'
+'''
+
+# case 2
+
+try:
+    print("passed here")
+    result = car_dict["name"]
+    print("result:", result)
+
+except KeyError as err:
+    print("no name state is found:", err)
+
+'''
+passed here
+result: Tayota
+'''
+# case 2 try bu data ni tekshiradi va jarayonni yakunladi
+
+
+# case 3
+try:
+    print("passed here")
+    result = car_dict["color"]
+    print("result:", result)
+
+except KeyError as err:
+    print("no color state is found:", err)
+
+else:
+    print("exacuted succesfully")
+
+finally:
+    print("final closing logic")
+
+'''
+passed here
+no color state is found: 'color'
+final closing logic
+'''
+# agar javob topilganda else method ishlardi
+
+try:
+    print("passed here")
+    a = car_dict.speed
+    print("result:", result)
+
+except KeyError as err:
+    print("no color state is found:", err)
+
+except AttributeError as err:
+    print("no speed is found:", err)
+else:
+    print("exacuted succesfully")
+
+finally:
+    print("final closing logic")
+
+'''
+passed here
+no speed is found: 'dict' object has no attribute 'speed'
+final closing logic
+
+'''
