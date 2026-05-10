@@ -1,7 +1,7 @@
 '''
 ---- OBJECTS -----
 (1)What is object
-(2)iretable objects & RANGE
+(2)Iterable objects & RANGE
 (3) DICTIONARY
 (4)Error hendling system
 '''
