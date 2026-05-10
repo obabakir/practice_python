@@ -13,7 +13,7 @@ print("=== Define (Parameter) vs Call (Argument) ===")
 
 # === Define (parameter) ===
 
-# Note: python alse has "void = None" and "return = value"
+# Note: python alse has "void = None" and "return = value" va bosh function bolmaydi kamida ^pass^ qoyish kere
 
 
 def great(a):
@@ -37,7 +37,7 @@ print("result2", result2)
 # return === result2: hello Brian
 
 
-print("=== Keyword (Parameter ga) vs Default (Argument ga) ===")
+print("=== Keyword (Argumentga ongdan chapga qarab ga) vs Default (Parametr ga) ===")
 
 # === Define (default value can be inserted) ===
 
