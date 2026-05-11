@@ -9,7 +9,7 @@ print(f"the count: {count} and the type of count: {type_count}")
 result1 = count.bit_count()  # => method
 result2 = count.numerator  # => state
 print(result1, result2)
-
+# 3 100
 
 print("===  string  ===")
 # MOTHODS: upper(), lower(), title(), find(), replace()
@@ -52,8 +52,8 @@ str() => changes number to string
 int() => changes string to number
 '''
 
-y = input("give your value for y:")
-print(f"y: {y}")
+# y = input("give your value for y:")
+# print(f"y: {y}")
 # >>>>   give your value for y:30
 # >>>>   y: 30
 
