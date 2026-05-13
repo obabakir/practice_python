@@ -12,6 +12,8 @@ print("==== Inheritence ====")
 # PARANT > CHILD (provides only public & protected properties)
 
 
+# class Animals(object): by default structure
+# class Animals(): you can leave () by choice
 class Animals:  # parent class
 
     description = "This class parent for animals"
@@ -40,6 +42,9 @@ class Dog(Animals):  # child class
 
     def protect(self):
         print("yes I can protect you!")
+
+    def make_voice(self):
+        print(f"{self.name} says: {self.sound}")
 
 
 print("--------- -------- -------")
@@ -120,3 +125,29 @@ cat.status:  the animal is alive
 #  print("fish.status: ", fish.__status)
 
 print("==== Polimorphysm ====")
+
+#  polimorphysm => bir narsani bir necha shaklda foydalanish mumkinlogi
+dog.make_voice()
+# Rex says: Woof
+
+fish.make_voice()
+# the animal make voice: False
+
+print("====> <=====")
+# instance > class > parent >> object
+# dog > Dog > Animals > object
+a = isinstance(dog, Dog)
+b = isinstance(dog, Animals)
+c = isinstance(dog, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+# the result: True
+
+print("the result:", result)
+
+data1 = issubclass(Dog, Animals)
+data2 = issubclass(Animals, object)
+
+# subinstance: True True
+
+print("subinstance:", data1, data2)
