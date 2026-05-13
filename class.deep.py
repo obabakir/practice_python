@@ -1,3 +1,12 @@
+'''
+CLASS deep learning:
+
+-- Encapsulation
+-- Inheritence
+-- Polimorphysm
+'''
+
+
 print("==== encapsulation ====")
 # Encapsulation => public  __private  _protected
 
