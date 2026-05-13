@@ -2,8 +2,8 @@
 OPERATORS & CONDITIONALS
 
 (1) Operators: +, -, *, /, //(yaxlid hosila bolishdan namoyon bolgan), % (qoldiq), ** (daraja), =, ==, !=, >, <, >=, <=, and, or, not |||| is operator to compare reference in Python
-(2) Conditionals:  
-()Logical operators: 
+(2) Conditionals:  if, elif, else
+(3) Logical operators: and, or, not
  
 '''
 
@@ -52,3 +52,57 @@ print("c == g:", c == g)     # True |||||| only value in Python
 # to compare the objects reference in Python |||| is operator
 print("c is g:", c is g)  # False
 print("c is e:", c is e)  # True
+
+
+print(" ===== CONDITIONALS =====")
+x = 15
+
+if x > 50:
+    print("Case A")
+elif x > 10:
+    print("Case B")
+else:
+    print("Case C")
+
+
+print("==== Logical Operators ====")
+age = 20
+# person = None
+
+# if age > 18:
+#     person = "Adult"
+# else:
+#     person = "Child"
+# print("person:", person)  # person: Adult
+
+# but with Logical operators:
+
+person = "adult" if age > 18 else "minor"
+print("person:", person)  # person: adult
+
+# isStudent = True
+# status = "Student" if isStudent else "Not a student"
+# print("status:", status)  # status: Student
+
+print("====> <=====")
+
+#  ==== Ternary operator ====
+
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = True
+
+if not is_student:
+    print("Welcome here, do you want to become a student?")
+elif is_admin:
+    print("please go to the office")
+# elif is_guest or is_parent:
+#     print("Welcome to our school")
+#     # Welcome to our school
+elif is_admin and is_parent:
+    print("Welcome to our school")
+    # Welcome to our school
+else:
+    print("Other cases")
+    # Other cases
