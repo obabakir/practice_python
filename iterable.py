@@ -1,6 +1,6 @@
 print("=== Iterable objects & RANGE ====")
 # Iterable === takrorlanish
-# Iterable objects => string dict tuple list range map filter
+# Iterable objects => string dict tuple list range map filter zip
 
 range_obj = range(5)
 print("range_obj: ", range_obj)
