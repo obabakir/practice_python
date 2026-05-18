@@ -1,5 +1,5 @@
 ''' Comprehension
-(1) What is  comprehension $ list comprehension
+(1) What is  comprehension & list comprehension
 (2) Set and dictionary comprehension
 '''
 print("=====================    (1) What is  comprehension $ list comprehension ================================")
